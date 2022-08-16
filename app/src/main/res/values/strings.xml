@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">UnitConverter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="area">
+        <item>mm^2</item>
+        <item>cm^2</item>
+        <item>dm^2</item>
+        <item>m^2</item>
+        <item>in^2</item>
+        <item>ft^2</item>
+        <item>yd^2</item>
+        <item>a</item>
+        <item>ha</item>
+        <item>km^2</item>
+        <item>acre</item>
+        <item>mile^2</item>
+    </string-array>
+
+    <string-array name="logitud">
+        <item>mm</item>
+        <item>cm</item>
+        <item>dm</item>
+        <item>m</item>
+        <item>in</item>
+        <item>ft</item>
+        <item>yd</item>
+        <item>km</item>
+        <item>mile</item>
+    </string-array>
+
+    <string-array name="peso">
+        <item>µg</item>
+        <item>mg</item>
+        <item>g</item>
+        <item>kg</item>
+        <item>lb</item>
+        <item>oz</item>
+        <item>grain</item>
+        <item>tonne</item>
+        <item>ton(UK)</item>
+        <item>ton(US)</item>
+        <item>stone(UK)</item>
+        <item>carat</item>
+    </string-array>
+
+    <string-array name="volumen">
+        <item>ml(cc)</item>
+        <item>dl</item>
+        <item>l</item>
+        <item>mm3</item>
+        <item>cm3</item>
+        <item>dm3</item>
+        <item>m3</item>
+        <item>in3</item>
+        <item>ft3</item>
+        <item>yd3</item>
+        <item>gal</item>
+        <item>fl oz</item>
+    </string-array>
+
+
+</resources>

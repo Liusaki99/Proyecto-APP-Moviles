@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addContacto"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:text="Añadir Contacto"
+            android:textSize="7sp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/sendEmail"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:text="Enviar Email"
+            android:textSize="7dp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/agendaEntrega"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:text="Agendar Entrega"
+            android:textSize="7dp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/gps"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:text="GPS"
+            android:textSize="7dp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/cam"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:text="Camara"
+            android:textSize="7dp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/unitConverted"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:text="Unit Converted"
+            android:textSize="7dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
