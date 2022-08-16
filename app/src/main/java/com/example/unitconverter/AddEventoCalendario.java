@@ -51,5 +51,10 @@ public class AddEventoCalendario extends AppCompatActivity {
         intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, fecha.getTimeInMillis());
         intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, fecha.getTimeInMillis());
         startActivity(intent);
+
+        titulo.setText("");
+        destino.setText("");
+        mensaje.setText("");
     }
+
 }

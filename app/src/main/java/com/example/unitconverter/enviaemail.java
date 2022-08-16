@@ -31,8 +31,14 @@ public class enviaemail extends AppCompatActivity {
                 intent.putExtra(intent.EXTRA_TEXT, mensaje.getText());
                 intent.setType("message/rfc/822");
                 startActivity(intent.createChooser(intent , "Escoje una aplicacion"));
+
+                para.setText("");
+                asunto.setText("");
+                mensaje.setText("");
+
             }
         });
 
     }
+
 }

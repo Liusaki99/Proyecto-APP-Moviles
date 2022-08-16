@@ -11,6 +11,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.util.Base64;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,7 +22,7 @@ import com.example.unitconverter.databinding.ActivityAgregarContactoBinding;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.Base64;
+
 
 
 public class AgregarContacto extends AppCompatActivity {
@@ -73,8 +74,14 @@ public class AgregarContacto extends AppCompatActivity {
                         email.getText().toString(),
                         direccion.getText().toString());
                 envio.execute();
+                regresarMenuPrincipal();
             }
         });
+    }
+
+    private void regresarMenuPrincipal() {
+        Intent intent = new Intent(AgregarContacto.this, MainActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -102,7 +109,7 @@ public class AgregarContacto extends AppCompatActivity {
 
         byte[] imageBytes = imageUriToBytes();
 
-        encodedImage = Base64.getEncoder().encodeToString(imageBytes);
+        encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
     }
 
     private byte[] imageUriToBytes() {

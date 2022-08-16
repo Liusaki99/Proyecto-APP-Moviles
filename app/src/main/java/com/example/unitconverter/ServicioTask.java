@@ -5,7 +5,6 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -70,7 +69,7 @@ public class ServicioTask extends AsyncTask<Void, Void, String> {
             url = new URL(wsURL);
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
             //crear el objeto json para enviar por POST
-            JSONArray parametrosPost= new JSONArray();
+            JSONObject parametrosPost= new JSONObject();
             parametrosPost.put("foto", imagen);
             parametrosPost.put("nombres", nombre);
             parametrosPost.put("apellidoP", apellido);
@@ -110,8 +109,16 @@ public class ServicioTask extends AsyncTask<Void, Void, String> {
                 result= sb.toString();
             }
             else{
-                result= new String("Error: "+ responseCode);
-
+                if(responseCode == 201)
+                {
+                    String res = "Correcto";
+                    result = res;
+                }
+                else
+                {
+                    String res = "Error: "+ responseCode;
+                    result = res;
+                }
 
             }
 

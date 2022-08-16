@@ -8,23 +8,42 @@
 
     <fragment
         android:id="@+id/opciones"
+        android:name="com.example.unitconverter.Opciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:name="com.example.unitconverter.Opciones"
-        tools:layout="@layout/fragment_opciones"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_opciones" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:textSize="40sp"
-        android:text="Activity Main"
+        android:fontFamily="casual"
+        android:text="Bievenidos a su conversor de unidades"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/opciones"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="casual"
+        android:text="Agua inmaculada"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

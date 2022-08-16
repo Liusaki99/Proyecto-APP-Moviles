@@ -7,30 +7,141 @@
     tools:context=".TomarPic">
 
     <ImageView
-        android:id="@+id/imagen"
+        android:id="@+id/imagentv"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:background="#CDCDCD"
         android:src="@drawable/ic_baseline_person_24"
+
         android:layout_marginTop="40dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/nombrestv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFF"
+        android:hint="Escribra sus nombres"
 
-    <Button
-        android:id="@+id/boton"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#000"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagentv" />
+
+    <TextView
+        android:id="@+id/aptv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFF"
+        android:hint="Apellido Paterno"
+
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#000"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombrestv" />
+
+    <TextView
+        android:id="@+id/celulartv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFF"
+        android:hint="Telefono Celular"
+
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#000"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aptv" />
+
+    <TextView
+        android:id="@+id/casatv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFF"
+        android:hint="Telefono Casa"
+
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#000"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/celulartv"
+
+        />
+
+    <TextView
+        android:id="@+id/emailtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFF"
+        android:hint="Email"
+
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#000"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/casatv" />
+
+    <TextView
+        android:id="@+id/direcciontv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFF"
+        android:hint="Direccion"
+
+        android:inputType="textPostalAddress"
+        android:padding="10dp"
+        android:textColor="#000"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailtv" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/salvartv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tomar Pic"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagen"
+        android:src="@drawable/ic_baseline_done_24"
 
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="40dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
